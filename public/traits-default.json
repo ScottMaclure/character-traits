@@ -25,47 +25,93 @@
 		"Bald",
 		"Braided",
 		"Curly",
-		"TBC More here"
+		"Dreadlocks",
+		"Frazzled",
+		"Greasy",
+		"Limp",
+		"Long",
+		"Messy",
+		"Strange hairstyle",
+		"Pony-tail",
+		"Short",
+		"Straight",
+		"Streaked",
+		"Thick",
+		"Thinning",
+		"Very Long",
+		"Wavy",
+		"Well groomed",
+		"Wiry"
 	],
 	"facialFeatures": [
 		"Acne",
 		"Beard",
 		"Buck-toothed",
-		"TBC More here"
+		"Bushy eyebrows",
+		"Chiseled",
+		"Doe-eyed",
+		"Distinctive nose",
+		"Gap-toothed",
+		"Goatee",
+		"Grizzled",
+		"Missing ear",
+		"Missing eye",
+		"Missing teeth",
+		"Moustache",
+		"Pierced",
+		"Pock-marked",
+		"Sideburns",
+		"Squinty",
+		"Stained teeth",
+		"Weather-beaten"
 	],
 	"characteristics": [
-		{
-			"text": "Birthmark",
-			"hasLocation": true
-		},
-		{
-			"text": "Body piercings",
-			"hasLocation": true
-		},
-		{
-			"text": "Chews tobacco"
-		},
-		{
-			"text": "Scarred",
-			"hasLocation": true
-		},
-		{
-			"text": "Smokes",
-			"hasLocation": false
-		},
-		{
-			"text": "Tattooed",
-			"hasLocation": true
-		},
-		{
-			"text": "Allergic to food/dust/pollen/animals"
-		},
-		{
-			"text": "Always arrives late"
-		},
-		{
-			"text": "Always gives vaguest possible answer"
-		}
+		{ "text": "Birthmark", "hasLocation": true },
+		{ "text": "Body piercings", "hasLocation": true },
+		{ "text": "Chews tobacco" },
+		{ "text": "Scarred", "hasLocation": true },
+		{ "text": "Smokes" },
+		{ "text": "Tattooed", "hasLocation": true },
+		{ "text": "Allergic to food/dust/pollen/animals" },
+		{ "text": "Always arrives late" },
+		{ "text": "Always gives vaguest possible answer" },
+		{ "text": "Always has something in hands" },
+		{ "text": "Always wears as little as possible" },
+		{ "text": "Always wears expensive clothes" },
+		{ "text": "Always wears same color" },
+		{ "text": "Always wears tattered clothes" },
+		{ "text": "Answers questions with questions" },
+		{ "text": "Aversion to certain kind of food" },
+		{ "text": "Bad breath or strong body odor" },
+		{ "text": "Bad/loud/annoying/shrill laugh" },
+		{ "text": "Bad with money" },
+		{ "text": "Believes all animals can talk to each other" },
+		{ "text": "Bites fingernails" },
+		{ "text": "Bites lips" },
+		{ "text": "Black eye" },
+		{ "text": "Bleeding nose" },
+		{ "text": "Blinks constantly" },
+		{ "text": "Bruises easily" },
+		{ "text": "Burps" },
+		{ "text": "Burn scar", "hasLocation": true },
+		{ "text": "Chews with mouth open" },
+		{ "text": "Chortles" },
+		{ "text": "Clicks tongue" },
+		{ "text": "Collects teeth/hair/claws of slain opponents" },
+		{ "text": "Constantly asks for divine advice" },
+		{ "text": "Covered in sores, boils, or a rash" },
+		{ "text": "Cracks knuckles" },
+		{ "text": "Dandruff" },
+		{ "text": "Dirty" },
+		{ "text": "Distinctive jewelry" },
+		{ "text": "Distracted easily during conversations" },
+		{ "text": "Double-checks everything" },
+		{ "text": "Drones on and on while talking" },
+		{ "text": "Easily confused" },
+		{ "text": "Enjoys own body odor" },
+		{ "text": "Exaggerates" },
+		{ "text": "Excessive body hair" },
+		{ "text": "Fidgets" }
 	],
 	"personality": [
 		"Accusative",

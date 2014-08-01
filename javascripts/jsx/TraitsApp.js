@@ -52,7 +52,7 @@ exports.TraitsApp = React.createClass({
   					<div className="panel-body">
 
 						<SimpleValue title="Hair" text={this.getRandomValue(this.props.hair)}/>
-						<SimpleValue title="Face" text={this.getRandomValue(this.props.facialFeatures)}/>
+						<SimpleValue title="Facial" text={this.getRandomValue(this.props.facialFeatures)}/>
 
 						<TraitValue title="Characteristic" text={characteristic.text} location={charLoc}/>
 

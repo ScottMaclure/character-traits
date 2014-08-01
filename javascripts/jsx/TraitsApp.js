@@ -40,8 +40,6 @@ exports.TraitsApp = React.createClass({
 		var characteristic = this.getRandomValue(this.props.characteristics);
 		var charLoc = characteristic.hasLocation ? this.getRandomValue(this.props.bodyLocations) : null;
 
-		console.debug('characteristic:', characteristic, 'charLoc:', charLoc);
-
 		/*jshint ignore:start*/
 		return (
 			<div className="container-fluid">
@@ -50,13 +48,12 @@ exports.TraitsApp = React.createClass({
 				<p>Character Traits generator, for your PnP roleplaying games.</p>
 
 				<SimpleValue title="Hair" text={this.getRandomValue(this.props.hair)}/>
-				<SimpleValue title="Facial Features" text={this.getRandomValue(this.props.facialFeatures)}/>
+				<SimpleValue title="Face" text={this.getRandomValue(this.props.facialFeatures)}/>
 
 				<TraitValue title="Characteristic" text={characteristic.text} location={charLoc}/>
 
-				<SimpleValue title="Speech" text={this.getRandomValue(this.props.speech)}/>
-
 				<SimpleValue title="Personality" text={this.getRandomValue(this.props.personality)}/>
+				<SimpleValue title="Speech" text={this.getRandomValue(this.props.speech)}/>
 
 				<div className="row spacer">
 					<div className="col-xs-12">

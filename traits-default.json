@@ -1,0 +1,88 @@
+{
+	"speech": [
+		"Accented",
+		"Breathless",
+		"Crisp",
+		"Fast",
+		"Guttural",
+		"Halting",
+		"Husky",
+		"Lisps",
+		"Low-pitched",
+		"Loud",
+		"Nasal",
+		"Nervous",
+		"Raspy",
+		"Slow",
+		"Slurs",
+		"Squeaky",
+		"Stutters",
+		"Wheezy",
+		"Whiny",
+		"Whispery"
+	],
+	"hair": [
+		"Bald",
+		"Braided",
+		"Curly",
+		"TBC More here"
+	],
+	"facialFeatures": [
+		"Acne",
+		"Beard",
+		"Buck-toothed",
+		"TBC More here"
+	],
+	"characteristics": [
+		{
+			"text": "Birthmark",
+			"hasLocation": true
+		},
+		{
+			"text": "Body piercings",
+			"hasLocation": true
+		},
+		{
+			"text": "Chews tobacco"
+		},
+		{
+			"text": "Scarred",
+			"hasLocation": true
+		},
+		{
+			"text": "Smokes",
+			"hasLocation": false
+		},
+		{
+			"text": "Tattooed",
+			"hasLocation": true
+		},
+		{
+			"text": "Allergic to food/dust/pollen/animals"
+		},
+		{
+			"text": "Always arrives late"
+		},
+		{
+			"text": "Always gives vaguest possible answer"
+		}
+	],
+	"personality": [
+		"Accusative",
+		"Active",
+		"Adventurous",
+		"TBC More here"
+	],
+	"bodyLocations": [
+		"Head/Face",
+		"Neck",
+		"Chest",
+		"Back",
+		"Stomach",
+		"Waist",
+		"Right arm",
+		"Left arm",
+		"Right leg",
+		"Left leg"
+	]
+}

@@ -1,0 +1,3 @@
+javascripts/build
+node_modules
+public/bundle.js

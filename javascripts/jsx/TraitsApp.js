@@ -44,16 +44,23 @@ exports.TraitsApp = React.createClass({
 		return (
 			<div className="container-fluid">
 
-				<h1>Character Traits</h1>
-				<p>Character Traits generator, for your PnP roleplaying games.</p>
+				<div className="page-header">
+  					<h1>Character Traits <small>NPC traits generator, for your roleplaying games.</small></h1>
+				</div>
 
-				<SimpleValue title="Hair" text={this.getRandomValue(this.props.hair)}/>
-				<SimpleValue title="Face" text={this.getRandomValue(this.props.facialFeatures)}/>
+				<div className="panel panel-info">
+  					<div className="panel-body">
 
-				<TraitValue title="Characteristic" text={characteristic.text} location={charLoc}/>
+						<SimpleValue title="Hair" text={this.getRandomValue(this.props.hair)}/>
+						<SimpleValue title="Face" text={this.getRandomValue(this.props.facialFeatures)}/>
 
-				<SimpleValue title="Personality" text={this.getRandomValue(this.props.personality)}/>
-				<SimpleValue title="Speech" text={this.getRandomValue(this.props.speech)}/>
+						<TraitValue title="Characteristic" text={characteristic.text} location={charLoc}/>
+
+						<SimpleValue title="Personality" text={this.getRandomValue(this.props.personality)}/>
+						<SimpleValue title="Speech" text={this.getRandomValue(this.props.speech)}/>
+
+					</div>
+				</div>
 
 				<div className="row spacer">
 					<div className="col-xs-12">

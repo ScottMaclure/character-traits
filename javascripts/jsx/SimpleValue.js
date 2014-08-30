@@ -26,7 +26,7 @@ exports.SimpleValue = React.createClass({
 			<div className="simpleValue">
 				<div className="row">
 					<div className="col-xs-4 col-md-2 text-right">
-						<strong>{this.props.title}</strong>
+						<strong>{this.props.title}:&nbsp;</strong>
 					</div>
 					<div className="col-xs-8 col-md-10">
 						{this.props.text}

@@ -10,8 +10,18 @@ Have this open on your mobile, laptop, tablet, pc etc, and use it to quickly gen
 
 Handy for improv style GMing, or during prep for the more meticulous GMs out there.
 
+## Running a local server
+
+`./node_modules/http-server/bin/http-server`
+
+http://localhost:8080/
+
 ## Publishing to gh-pages
+
+For my reference:
 
 ```
 cp -pr public/* ../character-traits-gh-pages/
 ```
+
+Yeh, that's a bit manual. Gulp task?

@@ -22,7 +22,7 @@ gulp.task('react', function () {
         .pipe(gulp.dest('javascripts/build'));
 });
 
-gulp.task('browserify', function () {
+gulp.task('browserify', [ 'react' ], function () {
 	// Single entry point to browserify
 	return gulp.src('javascripts/main.js')
 		.pipe(browserify({
@@ -35,10 +35,10 @@ gulp.task('browserify', function () {
 });
 
 // Rerun the task when a file changes
-gulp.task('watch', function () {
-	gulp.watch(paths.reactJsx, [ 'react', 'browserify' ]);
+gulp.task('watch', [ 'browserify' ], function () {
+	gulp.watch(paths.reactJsx, [ 'browserify' ]);
 	gulp.watch(paths.scripts, [ 'browserify' ]);
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', [ 'react', 'browserify', 'watch' ]);
+gulp.task('default', [ 'watch' ]);

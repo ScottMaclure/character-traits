@@ -10,6 +10,13 @@ Have this open on your mobile, laptop, tablet, pc etc, and use it to quickly gen
 
 Handy for improv style GMing, or during prep for the more meticulous GMs out there.
 
+## Development
+
+```
+npm install
+gulp
+```
+
 ## Running a local server
 
 `./node_modules/http-server/bin/http-server`

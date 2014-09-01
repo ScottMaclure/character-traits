@@ -14,6 +14,9 @@ var TraitValue = require('./TraitValue.js').TraitValue;
 exports.TraitsApp = React.createClass({
 
 	propTypes: {
+		names: React.PropTypes.arrayOf(React.PropTypes.string),
+		instincts: React.PropTypes.arrayOf(React.PropTypes.string),
+		knacks: React.PropTypes.arrayOf(React.PropTypes.string),
 		speech: React.PropTypes.arrayOf(React.PropTypes.string),
 		hair: React.PropTypes.arrayOf(React.PropTypes.string),
 		facialFeatures: React.PropTypes.arrayOf(React.PropTypes.string),
@@ -51,13 +54,14 @@ exports.TraitsApp = React.createClass({
 				<div className="panel panel-info">
   					<div className="panel-body">
 
+  						<SimpleValue title="Name" text={this.getRandomValue(this.props.names)}/>
 						<SimpleValue title="Hair" text={this.getRandomValue(this.props.hair)}/>
 						<SimpleValue title="Facial" text={this.getRandomValue(this.props.facialFeatures)}/>
-
-						<TraitValue title="Characteristic" text={characteristic.text} location={charLoc}/>
-
-						<SimpleValue title="Personality" text={this.getRandomValue(this.props.personality)}/>
 						<SimpleValue title="Speech" text={this.getRandomValue(this.props.speech)}/>
+						<TraitValue title="Characteristic" text={characteristic.text} location={charLoc}/>
+						<SimpleValue title="Personality" text={this.getRandomValue(this.props.personality)}/>
+						<SimpleValue title="Instinct" text={this.getRandomValue(this.props.instincts)}/>
+						<SimpleValue title="Knack" text={this.getRandomValue(this.props.knacks)}/>
 
 					</div>
 				</div>

@@ -70,7 +70,7 @@ exports.TraitsApp = React.createClass({
 
 			/*jshint ignore:start*/
 			npcs.push(
-				<div key={i} className="row spacer">
+				<div key={i} className="row">
 					<div className="col-xs-12">
 						<div className="panel panel-info">
 		  					<div className="panel-body">
@@ -116,17 +116,20 @@ exports.TraitsApp = React.createClass({
 			<div className="container-fluid">
 
 				<div className="page-header">
-  					<h1>Character Traits <small>NPC traits generator, for your roleplaying games.</small></h1>
+  					<h1>
+  						Character Traits&nbsp;
+  						<small>NPC traits generator, for your roleplaying games.</small>
+					</h1>
 				</div>
 
 				<div className="row spacer">
-					<div className="col-xs-12 col-md-2">
+					<div className="col-xs-5 col-md-2">
 						<label># NPCS:&nbsp;</label>
 						<select ref="npcCount">
 							{npcsOptions}
 						</select>
 					</div>
-					<div className="col-xs-12 col-md-10">
+					<div className="col-xs-7 col-md-10 left">
 						<button type="button" className="btn btn-primary"
 						onClick={this.handleRegen}>Generate new traits</button>
 					</div>
@@ -134,9 +137,12 @@ exports.TraitsApp = React.createClass({
 
 				{npcs}
 
-				<div className="row spacer">
-					<div className="col-xs-12">
-						<PatreonBadge hid="899786"/>
+				<div className="row">
+					<div className="col-xs-12 col-md-9 spacer">
+						<PatreonBadge hid={899786}/>
+					</div>
+					<div className="col-xs-12 col-md-3">
+						&copy; 2014 <a href="mailto:scott@maclure.com.au">Scott Maclure</a>. All Rights Reserved.
 					</div>
 				</div>
 

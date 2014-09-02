@@ -60,14 +60,13 @@ exports.TraitsApp = React.createClass({
 
 	render: function () {
 
-		var characteristic = this.getRandomValue(this.props.characteristics);
-		var charLoc = characteristic.hasLocation ? this.getRandomValue(this.props.bodyLocations) : null;
-
-
 		// Support multiple sets of NPC data, based on the passed prop value.
 		var npcs = [];
 		for (var i = 0; i < this.props.npcs; i++) {
-			this.noop();
+
+			var characteristic = this.getRandomValue(this.props.characteristics);
+			var charLoc = characteristic.hasLocation ? this.getRandomValue(this.props.bodyLocations) : null;
+
 			/*jshint ignore:start*/
 			npcs.push(
 				<div key={i} className="row spacer">

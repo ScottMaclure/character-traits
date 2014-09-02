@@ -10,6 +10,7 @@ var React = require('react');
 
 var SimpleValue = require('./SimpleValue.js').SimpleValue;
 var TraitValue = require('./TraitValue.js').TraitValue;
+var PatreonBadge = require('./PatreonBadge.js').PatreonBadge;
 
 exports.TraitsApp = React.createClass({
 
@@ -132,6 +133,12 @@ exports.TraitsApp = React.createClass({
 				</div>
 
 				{npcs}
+
+				<div className="row spacer">
+					<div className="col-xs-12">
+						<PatreonBadge hid="899786"/>
+					</div>
+				</div>
 
 			</div>
 		);

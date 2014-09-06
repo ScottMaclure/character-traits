@@ -16,6 +16,7 @@ exports.PatreonBadge = React.createClass({
 
 		/*jshint unused:false*/
 
+		// TODO Use https://github.com/sindresorhus/query-string
 		var patreonUrl = 'http://www.patreon.com/creation?hid=' + this.props.hid;
 
 		/*jshint ignore:start*/

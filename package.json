@@ -1,17 +1,28 @@
 {
-  "name": "character-traits",
-  "description": "Pen-and-paper roleplaying game aid - character traits.",
-  "version": "0.0.1",
-  "devDependencies": {
-    "react": "*",
-    "react-tools": "*",
-    "browserify": "*",
-    "jquery": "*",
-    "gulp-react": "^0.3.3",
-    "gulp": "^3.8.0",
-    "gulp-browserify": "^0.5.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^0.3.0",
-    "http-server": "^0.6.1"
-  }
+	"name": "character-traits",
+	"description": "Pen-and-paper roleplaying game aid - character traits.",
+	"version": "0.0.1",
+	"devDependencies": {
+		"react": "*",
+		"react-tools": "*",
+		"browserify": "*",
+		"jquery": "*",
+		"gulp-react": "^0.3.3",
+		"gulp": "^3.8.0",
+		"gulp-browserify": "^0.5.0",
+		"gulp-rename": "^1.2.0",
+		"gulp-uglify": "^0.3.0",
+		"http-server": "^0.6.1",
+		"jest-cli": "^0.1.18"
+	},
+	"scripts": {
+		"test": "jest"
+	},
+	"jest": {
+		"scriptPreprocessor": "<rootDir>/preprocessor.js",
+		"unmockedModulePathPatterns": [
+			"<rootDir>/node_modules/react"
+		],
+		"collectCoverage": true
+	}
 }

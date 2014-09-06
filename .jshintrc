@@ -65,6 +65,12 @@
 	"passfail": false,
 	"white": true,
 	"globals": {
-		"exports": true
+		"exports": true,
+		"jest": true,
+		"describe": true,
+		"beforeEach": true,
+		"afterEach": true,
+		"it": true,
+		"expect": true
 	}
 }

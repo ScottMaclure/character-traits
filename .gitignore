@@ -5,3 +5,5 @@ public/bundle.js
 # Intellij project files.
 *.iml
 .idea
+
+npm-debug.log

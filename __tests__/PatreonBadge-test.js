@@ -1,30 +1,24 @@
-/** @jsx React.DOM */
-
-var COMPONENT_PATH = '../javascripts/jsx/PatreonBadge.js';
-//var COMPONENT_PATH = '../javascripts/build/PatreonBadge.js';
+//var COMPONENT_PATH = '../javascripts/jsx/PatreonBadge.js';
+var COMPONENT_PATH = '../javascripts/build/PatreonBadge.js';
 
 jest.dontMock(COMPONENT_PATH);
 
 describe('PatreonBadge test suite', function () {
 
-	/*jshint unused:false*/
-
 	var TEST_HID = 123123123;
 
 	var React = require('react/addons');
 	var TestUtils = React.addons.TestUtils;
-	var PatreonBadge = require(COMPONENT_PATH).PatreonBadge;
+	var patreonBadge = require(COMPONENT_PATH).PatreonBadge;
 
 	var component;
 	var anchor;
 
 	beforeEach(function () {
 
-		/*jshint ignore:start*/
 		component = TestUtils.renderIntoDocument(
-			<PatreonBadge hid={TEST_HID}/>
+			patreonBadge({ hid: TEST_HID })
 		);
-		/*jshint ignore:end*/
 
 		anchor = TestUtils.findRenderedDOMComponentWithTag(component, 'a');
 

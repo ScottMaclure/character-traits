@@ -19,10 +19,12 @@
 		"test": "jest"
 	},
 	"jest": {
-		"scriptPreprocessor": "<rootDir>/preprocessor.js",
 		"unmockedModulePathPatterns": [
 			"<rootDir>/node_modules/react"
 		],
 		"collectCoverage": true
+	},
+	"jest_disabled_stuff": {
+		"scriptPreprocessor": "<rootDir>/preprocessor.js"
 	}
 }

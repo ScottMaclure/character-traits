@@ -1,3 +1,7 @@
 javascripts/build
 node_modules
 public/bundle.js
+
+# Intellij project files.
+*.iml
+.idea

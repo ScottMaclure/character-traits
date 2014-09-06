@@ -1,6 +1,9 @@
 /** @jsx React.DOM */
 
-jest.dontMock('../javascripts/jsx/PatreonBadge.js');
+var COMPONENT_PATH = '../javascripts/jsx/PatreonBadge.js';
+//var COMPONENT_PATH = '../javascripts/build/PatreonBadge.js';
+
+jest.dontMock(COMPONENT_PATH);
 
 describe('PatreonBadge test suite', function () {
 
@@ -10,7 +13,7 @@ describe('PatreonBadge test suite', function () {
 
 	var React = require('react/addons');
 	var TestUtils = React.addons.TestUtils;
-	var PatreonBadge = require('../javascripts/jsx/PatreonBadge.js').PatreonBadge;
+	var PatreonBadge = require(COMPONENT_PATH).PatreonBadge;
 
 	var component;
 	var anchor;

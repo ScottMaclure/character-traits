@@ -1,6 +1,6 @@
 # Character Traits
 
-http://scottmaclure.github.io/character-traits/
+http://scott.maclure.info/character-traits/
 
 ## Overview
 
